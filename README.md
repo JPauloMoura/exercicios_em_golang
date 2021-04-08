@@ -1,2 +1,2 @@
-# exercicios_em_golang
-Lista de exercícios criada durante a aprendizagem da liguagem 
+## O que você vai encontrar aqui?
+Um Repositorio dedicado aos exercícios que venho praticando para aprendizado do linguagem Go!
