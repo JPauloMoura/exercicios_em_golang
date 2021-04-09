@@ -45,4 +45,9 @@ func main() {
 	magali := Pessoa{"Magali da Silva", 18, true, Endereco{"Altos", "SP", "rua 2", 909}}
 	fmt.Println(magali)
 
+	//declaração 5 com ponteiros
+	var fernanda *Pessoa
+	fernanda = new(Pessoa)
+	fmt.Println(fernanda)
+
 }
