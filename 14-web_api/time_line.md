@@ -6,3 +6,7 @@ SOLUÇÃO:
  >  Alterei a porta do servido pois a outra estava em uso.
 
 <br/>
+
+2) 2021/05/02 22:51:22 pq: password authentication failed for user "jmoura@acesso.digital"
+SOLUÇÃO:
+> o string de conexão estava errada. errado: `use`, correto `user`
