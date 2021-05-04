@@ -7,5 +7,7 @@ import (
 )
 
 func Handler() {
-	http.HandleFunc("/", controllers.HandlePageWeb)
+	http.HandleFunc("/", controllers.HandleIndex)
+	http.HandleFunc("/novo-produto", controllers.HandlerForm)
+	http.HandleFunc("/insert", controllers.InsertProduct)
 }
