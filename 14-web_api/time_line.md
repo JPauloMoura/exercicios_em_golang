@@ -7,6 +7,6 @@ SOLUÇÃO:
 
 <br/>
 
-2) 2021/05/02 22:51:22 pq: password authentication failed for user "jmoura@acesso.digital"
+2) 2021/05/02 22:51:22 pq: password authentication failed for user "joaopaulo@moura"
 SOLUÇÃO:
 > o string de conexão estava errada. errado: `use`, correto `user`
