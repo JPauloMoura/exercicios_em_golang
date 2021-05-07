@@ -38,6 +38,9 @@
                 <td>R$ {{.Preco}},00</td>
                 <td>{{.Descricao}}</td>
                 <td>{{.Quantidade}}</td>
+                <td>
+                  <button class="btn btn-danger" onclick="onDelete('{{.Id}}')">Deletar</button>
+                </td>
               </tr>
             {{end}}
           </tbody>
@@ -49,5 +52,14 @@
     </div>
   </div>
 </body>
+
+<script>
+  function onDelete(id){
+    let resp = confirm("Deseja deletar esse produto?")
+    if (resp){
+      window.location = `/delete?id=${id}`
+    }
+  }
+</script>
 </html>
 {{end}}

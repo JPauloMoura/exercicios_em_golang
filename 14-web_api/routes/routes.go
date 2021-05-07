@@ -10,4 +10,5 @@ func Handler() {
 	http.HandleFunc("/", controllers.HandleIndex)
 	http.HandleFunc("/novo-produto", controllers.HandlerForm)
 	http.HandleFunc("/insert", controllers.InsertProduct)
+	http.HandleFunc("/delete", controllers.DeleteProduct)
 }
