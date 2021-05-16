@@ -10,3 +10,14 @@ SOLUÇÃO:
 2) 2021/05/02 22:51:22 pq: password authentication failed for user "joaopaulo@moura"
 SOLUÇÃO:
 > o string de conexão estava errada. errado: `use`, correto `user`
+
+3) Ao entrar na página de edição do produto, o ID do produto era enviado como `""`
+na request:
+EX: `productID := r.URL.Query().Get("id") // productID --> ""`
+
+SOLUÇÂO:
+ >  não estava passando o id na query params
+ ```html
+    <a class="btn btn-info" href="/editar?{{.Id}}">Editar</a> <!--Errado -->
+    <a class="btn btn-info" href="/editar?id={{.Id}}">Editar</a> <!--Correto -->
+ ```
