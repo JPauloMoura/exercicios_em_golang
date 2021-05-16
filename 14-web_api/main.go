@@ -9,6 +9,6 @@ import (
 
 func main() {
 	routes.Handler()
-	log.Println("Servidor rodando na porta 3001...")
-	http.ListenAndServe(":3001", nil)
+	log.Println("Servidor rodando na porta 3002...")
+	http.ListenAndServe(":3002", nil)
 }
