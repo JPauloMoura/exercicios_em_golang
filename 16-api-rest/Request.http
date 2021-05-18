@@ -1,3 +1,33 @@
 GET http://localhost:3333/api/v1/books
+###
+
+GET http://localhost:3333/api/v1/books/4
+###
+
+DELETE  http://localhost:3333/api/v1/books/1
+###
+
+POST http://localhost:3333/api/v1/books
+Content-Type: application/json
+
+{
+  "id": 890,
+  "name": "book1",
+  "description": "Terro",
+  "mediumPrice": 40,
+  "author": "desconhecido",
+  "imgUrl": "http://imageBook1.com"
+}
 
 ###
+PUT  http://localhost:3333/api/v1/books
+Content-Type: application/json
+
+{
+  "id": 3,
+  "name": "Book inglês",
+  "description": "Terro",
+  "mediumPrice": 900.0,
+  "author": "desconhecido",
+  "imgUrl": "http://image.com"
+}
