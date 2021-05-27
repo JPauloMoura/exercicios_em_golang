@@ -128,3 +128,111 @@ func main() {
 [Resolução do Exercício](https://goplay.space/#mdD5GVxby_3) 
 
 <br/>
+
+### 6. Crie um programa que demonstre o funcionamento da declaração if.
+```go
+package main
+
+import "fmt"
+
+func main() {
+	fmt.Print("Bom dia! ")
+
+	if eDomingo := false; eDomingo {
+		fmt.Print("Hoje é Domingo!")
+	}
+}
+```
+#### Resultado:
+```bash
+Bom dia! 
+```
+
+[Resolução do Exercício](https://goplay.space/#h30GFb3qkRN) 
+
+<br/>
+
+### 7. Utilizando a solução anterior, adicione as opções else if e else.
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+	if eDomingo := true; eDomingo {
+		fmt.Print("Bom dia! Hoje é Domingo dia de descansar!")
+	} else {
+		fmt.Print("Bom dia! Tenho que trabalhar duro hoje!")
+	}
+}
+```
+#### Resultado:
+```bash
+Bom dia! Hoje é Domingo dia de descansar!
+```
+
+[Resolução do Exercício](https://goplay.space/#rotxWkgxh3g) 
+
+<br/>
+
+### 8. Crie um programa que utilize a declaração switch, sem switch statement especificado.
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+	turno := "tarde"
+	switch {
+	case turno == "manhã":
+		fmt.Print("Bom dia!")
+
+	case turno == "tarde":
+		fmt.Print("Boa tarde!")
+
+	case turno == "noite":
+		fmt.Print("Boa noite")
+	}
+}
+```
+#### Resultado:
+```bash
+Boa tarde!
+```
+
+[Resolução do Exercício](https://goplay.space/#jXczMcdDwS_x) 
+
+<br/>
+
+### 8. Crie um programa que utilize a declaração switch, onde o switch statement seja uma variável do tipo string com identificador "esporteFavorito".
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+	esporteFavorito := "futebol"
+
+	switch esporteFavorito {
+	case "volei":
+		fmt.Print("amo jogar volei!")
+
+	case "basquete":
+		fmt.Print("amo jogar basquete!")
+
+	case "futebol":
+		fmt.Print("amo jogar futebol!")
+	}
+}
+```
+#### Resultado:
+```bash
+amo jogar futebol!
+```
+
+[Resolução do Exercício](https://goplay.space/#BgjRA1Uih0T) 
+
+<br/>
