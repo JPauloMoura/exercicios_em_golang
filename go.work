@@ -1,3 +1,2 @@
 go 1.18
 
-use ./00-algoritmos-e-estrutura-de-dados/01-ordenacao-de-bolhas

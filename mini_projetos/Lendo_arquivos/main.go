@@ -4,13 +4,43 @@ import (
 	"bufio"
 	"fmt"
 	"io"
+	"io/ioutil"
 	"os"
 	"strings"
 )
 
 func main() {
 	// lerArquivo1()
-	lerArquivo2()
+	// lerArquivo2()
+	test()
+}
+
+type File struct {
+	Name  string
+	bytes *os.File
+}
+
+func start() *File {
+	ponteiro, _ := os.Open("file.txt")
+
+	return &File{
+		Name:  "file 1",
+		bytes: ponteiro,
+	}
+}
+
+func test() {
+
+	// file := start()
+	// defer file.bytes.Close()
+
+	b, err := ioutil.ReadFile("./file.txt")
+
+	if err != nil {
+		fmt.Println(err)
+	}
+
+	fmt.Println(string(b))
 }
 
 func lerArquivo1() {
@@ -27,7 +57,6 @@ func lerArquivo1() {
 	}
 	fmt.Println(string(conteudo))
 
-	ponteiro.Close()
 }
 
 func lerArquivo2() {
