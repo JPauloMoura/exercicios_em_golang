@@ -1,14 +1,21 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 /*
 	Funções recursivas são funções que chamam elas mesmas para que tenhamos um resultado esperado
 	quando uma condisão de parada é atendida.
 */
 func main() {
+	fmt.Println("---- contadorRecursivo -----")
 	contadorRecursivo(10)
-	fmt.Println("fatorial ->", factorial_calc(5))
+
+	fmt.Printf("---- fatorial ----\n%d\n", factorial_calc(5))
+
+	fmt.Println("---- findLinks -----")
+	findLinks()
 }
 
 // contadorRecursivo realiza uma contagem decresente chamando ele mesmo, mas a cada nova chamada ele diminui numero.
@@ -18,8 +25,6 @@ func contadorRecursivo(numero int) {
 		fmt.Println(numero)
 		contadorRecursivo(numero - 1)
 	}
-
-	return
 }
 
 // Um exemplo classico do uso de recursividade é o calculo de fatoriais.
