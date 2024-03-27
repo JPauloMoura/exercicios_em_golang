@@ -1,0 +1,6 @@
+mode: set
+exercicios/10-Testes/main.go:3.13,5.2 1 0
+exercicios/10-Testes/main.go:6.46,7.25 1 1
+exercicios/10-Testes/main.go:7.25,8.16 1 1
+exercicios/10-Testes/main.go:8.16,10.4 1 1
+exercicios/10-Testes/main.go:13.2,13.11 1 0
