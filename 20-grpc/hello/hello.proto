@@ -1,0 +1,19 @@
+syntax = "proto3"; // defini a versão do protobuf
+
+package pb; // nome do pacote Go em que os códigos do arquivo proto seram gerados
+option go_package = "/pb"; // defini onde ficara a pasta do pacote 
+
+// vamos definir o tipo de mensagens que vão
+//ser enviados nos nossas proto.
+message HelloUser {
+    string UserName = 1; // o numero é a ordem do campo
+}
+
+// Aqui vamos definir um serviço/metodo/endpoint proto
+service HandlerHello {
+    rpc Hello(HelloUser) returns (Blank) {};
+}
+
+
+message Blank {
+}
