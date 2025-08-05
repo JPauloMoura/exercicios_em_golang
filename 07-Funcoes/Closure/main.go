@@ -21,7 +21,7 @@ func main() {
 
 type ProximoItem func() string
 
-// PercorrerLista devolve a função ProximoItem, que vai ter na sua "memória" o calor te todoas a veriaveis
+// PercorrerLista devolve a função ProximoItem, que vai ter na sua "memória" o valor de todas as variáveis
 // que foram declaradas no escopo em que ela foi criada.
 // ou seja, a cada nova chamada da função ProximoItem que foi retornada, ela vai lembrar de todos os seu valores anteriores.
 func PercorrerLista(lista []string) ProximoItem {
